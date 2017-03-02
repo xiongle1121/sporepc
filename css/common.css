@@ -1,0 +1,150 @@
+body {
+  font: 12px/1.15 'microsoft yahei', Arial, simsun, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figure,
+figcaption {
+  display: block;
+}
+ul,
+li,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+img {
+  border-style: none;
+  vertical-align: middle;
+  width: 100%;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.header {
+  height: 98px;
+  background-color: #fff;
+}
+.header .head-content {
+  max-width: 1160px;
+  min-width: 800px;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  height: 60px;
+}
+.header .logo {
+  height: 100%;
+}
+.header .logo img {
+  height: 100%;
+  width: auto;
+}
+.header .head-nav {
+  height: 40px;
+  padding: 16px 0;
+}
+.header .head-nav li {
+  float: left;
+  font-size: 14px;
+  color: #141414;
+}
+.header .head-nav li a {
+  display: block;
+  float: left;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  color: #141414;
+}
+.header .head-nav li a:hover {
+  color: #f39410;
+}
+.header .head-nav li.on a {
+  color: #f39410;
+  background: url(../img/nav-on.png) no-repeat center bottom;
+}
+.header .head-nav li .divider {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 21px;
+  background: url(../img/divider.png) no-repeat 0 0;
+}
+.footer {
+  height: 84px;
+  background-color: #030303;
+}
+.footer .foot-content {
+  max-width: 1160px;
+  min-width: 800px;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  height: 50px;
+}
+.footer .copyright {
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 25px;
+}
+.footer .cooperation {
+  height: 100%;
+}
+.footer .cooperation li {
+  float: left;
+  margin-left: 25px;
+  height: 50px;
+  line-height: 50px;
+}
+.footer .cooperation li a {
+  display: block;
+}
+.footer .cooperation .sipogame {
+  width: 90px;
+}
+.footer .cooperation .dingzan {
+  width: 39px;
+}
+.footer .cooperation .dailishang {
+  width: 42px;
+}

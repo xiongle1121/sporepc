@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="软件开发，游戏开发，电子商务，袋里商"/>
+    <meta name="description" content="长沙思珀科技有限公司，是一家具有现代创新精神高端信息化的有限制责任公司。公司主要致力于软件开发，网站制作，OA办公系统开发、电子商务平台建立、私人高端定制APP等服务。"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="css/aboutus.css" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>长沙思珀科技--关于我们</title>
+</head>
+<body id="fullpage">
+    <div class="section">
+            <!--顶部logo及导航-->
+            <header class="header">
+                <div class="head-content">
+                    <div class="logo fl">
+                        <a href="index.html"><img src="img/sipo-logo.png" alt="长沙思珀科技有限公司"/></a>
+                    </div>
+                    <nav class="head-nav fr" id="head-nav">
+                        <ul>
+                            <li><a href="index.html">官网首页</a><span class="divider"></span></li>
+                            <li class="on"><a href="aboutus.html">关于我们</a><span class="divider"></span></li>
+                            <li><a href="join-us.html">加入我们</a><span class="divider"></span></li>
+                            <li><a href="contactus.html">联系我们</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="page1-img"></div>
+    </div>
+    <div class="section">
+        <div class="page2-img"></div>
+        <div class="page2-text">
+            <div class="motto">『孢子是生命的单元体，它的进化方向是多元化的，孢子科技也就是丰富多彩的世界』</div>
+            <p>思珀创始人<span>邹丰骏</span></p>
+        </div>
+        <i class="arrow-down"></i>
+    </div>
+    <div class="page3 section">
+        <div class="page3-content">
+            <div class="text-left">
+                <div class="red-line"></div>
+                <div class="page3-img">
+                    <img src="img/sipo-game1.png" alt="思珀游戏"/>
+                </div>
+                <div class="text">
+                    <h4>关于思珀游戏</h4>
+                    <div class="text-details">
+                        2017年，思珀游戏事业部成立。<br/>
+                        思珀游戏事业部致力游戏的策划、开发、运营于一体，团队成员由深耕游戏行业多年的技术大牛与行走游戏江湖多年的骨灰级玩家构成。思珀
+                        坚持以高品质游戏为开发理念，以玩家体验为设计原则来制作游戏，并相信一款好的游戏不仅是华丽画面的构成与代码的串连，更应该是始终守候身边的快乐陪伴是一个时代的印记。<br/>
+                        我们的愿景是让每一位用户真正体验到高品质游戏所带来焕然一新的感受，在游戏中寻找到独一无二的快乐
+                    </div>
+                    <div class="left-gray-line"></div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="red-line"></div>
+                <div class="page3-img">
+                    <img src="img/sipo-game2.png" alt="思珀游戏"/>
+                </div>
+                <div class="text">
+                    <div class="text-details">
+                        在游戏的世界里，<br/>
+                        我们是最敏捷的狩猎者，<br/>
+                        有最挑剔的眼光和最灵敏的手速，<br/>
+                        我们是游戏玩家，<br/>
+                        我们执着于建立属于玩家的虚拟世界<br/>
+                        用玩家的心声、志趣打造最梦幻、刺激的游戏<br/>
+                        思珀游戏<br/>
+                        最懂玩家
+                    </div>
+                    <div class="right-gray-line"></div>
+                </div>
+            </div>
+        </div>
+        <i class="arrow-down"></i>
+    </div>
+    <div class="page4 section">
+        <div class="page4-top clearfix">
+            <div class="page4-top-left fl">
+                <div class="clearfix">
+                    <img class="page4-img1 fl" src="img/envir3.png"/>
+                    <img class="page4-img2 fr" src="img/envir1.png"/>
+                </div>
+                <div>
+                    <img class="page4-img3" src="img/envir2.png"/>
+                </div>
+            </div>
+            <div class="page4-top-right fr">
+                <img class="page4-img4" src="img/envir4.png"/>
+                <img class="page4-img5" src="img/work-environment.png"/>
+            </div>
+        </div>
+        <div class="page4-bottom"></div>
+        <i class="arrow-up" id="arrow-up"></i>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        jQuery.extend( jQuery.easing,{
+            easeInBack: function (x, t, b, c, d, s) {
+                if (s == undefined) s = 1.70158;
+                return c*(t/=d)*t*((s+1)*t - s) + b;
+            }
+        });
+        $(function(){
+            $('#fullpage').fullpage({
+                anchors:['page1','page2','page3','page4'],
+                scrollingSpeed:600,
+                easing:'easeInBack'
+            });
+            $('#fullpage').find('.arrow-down').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
+            $('#arrow-up').click(function(){
+                $.fn.fullpage.moveTo(1);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.concat-main {
+  position: fixed;
+  top: 98px;
+  bottom: 84px;
+  left: 0;
+  right: 0;
+  background: url(../img/dot.png) repeat 0 0;
+}
+.concat-inner {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -600px;
+  margin-top: -110px;
+}
+.concat-inner > div {
+  width: 260px;
+  float: left;
+}
+.concat-inner .address {
+  margin-right: 210px;
+}
+.concat-inner .phone {
+  margin-right: 210px;
+}
+.concat-inner .title {
+  letter-spacing: -8px;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 72px;
+  color: #313131;
+  line-height: 66%;
+  border-bottom: 7px solid #343434;
+}
+.concat-inner .red-color {
+  font-size: 24px;
+  font-weight: 600;
+  color: #E74E4E;
+  margin: 35px 0 40px;
+}
+.concat-inner .details {
+  color: #acacac;
+  line-height: 28px;
+  font-size: 14px;
+}
+.concat-inner .details i {
+  font-family: Arial;
+  letter-spacing: -1px;
+}
